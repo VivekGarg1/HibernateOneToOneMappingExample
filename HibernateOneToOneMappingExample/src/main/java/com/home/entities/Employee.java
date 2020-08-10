@@ -50,7 +50,7 @@ public class Employee {
 	@Column(name = "salary")
 	private double salary;
 	
-	@OneToOne(cascade = CascadeType.ALL)
+	@OneToOne(cascade = {CascadeType.ALL,CascadeType.REMOVE})
 	@JoinColumn(name = "address_id")
 	private Address address;
 	

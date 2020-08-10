@@ -14,9 +14,9 @@ public class ClientTest {
 		try(Session session=HibernateUtil.getSessionFactory().openSession()){
 			//createEmployee(session);
 			//getEmployeeById(session);
-			getAddressById(session);
+			//getAddressById(session);
 			//updateEmployeeById(session);
-			//deleteEmployeeById(session);
+			deleteEmployeeById(session);
 		}
 		catch(Exception e) {
 			e.printStackTrace();
