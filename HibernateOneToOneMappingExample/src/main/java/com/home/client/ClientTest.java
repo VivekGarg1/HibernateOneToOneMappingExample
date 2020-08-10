@@ -12,11 +12,11 @@ public class ClientTest {
 
 	public static void main(String[] args) {
 		try(Session session=HibernateUtil.getSessionFactory().openSession()){
-			//createEmployee(session);
+			createEmployee(session);
 			//getEmployeeById(session);
 			//getAddressById(session);
 			//updateEmployeeById(session);
-			deleteEmployeeById(session);
+			//deleteEmployeeById(session);
 		}
 		catch(Exception e) {
 			e.printStackTrace();
